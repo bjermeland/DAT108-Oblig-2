@@ -60,9 +60,7 @@ public class Oppg3 {
 	}
 	
 	private static void skrivUtAlle(List<Ansatt> ansatte) {
-		for(Ansatt a : ansatte) {
-			System.out.println(a.toString());
-		}
+		for(Ansatt a : ansatte) System.out.println(a.toString());
 	}
 
 }
