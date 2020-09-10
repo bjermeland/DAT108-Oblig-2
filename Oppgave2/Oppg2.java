@@ -23,14 +23,10 @@ public class Oppg2 {
 		lonnsoppgjor(ansatte, kroneTillegg);
 		lonnsoppgjor(ansatte, prosentTillegg);
 		
-		List<Ansatt> ansattLavLonn = ansatte.stream()
-				         					.filter(a -> a.getLonn() < 500000)
-				         					.collect(Collectors.toList());
+		List<Ansatt> ansattLavLonn = ansatte.stream().filter(a -> a.getLonn() < 500000).collect(Collectors.toList());
 		lonnsoppgjor(ansattLavLonn, kroneTilleggForLavLonn);
 		
-		List<Ansatt> ansattMenn = ansatte.stream()
-										 .filter(a -> a.getKjonn().equals(Kjonn.M))
-										 .collect(Collectors.toList());
+		List<Ansatt> ansattMenn = ansatte.stream().filter(a -> a.getKjonn().equals(Kjonn.M)).collect(Collectors.toList());
 		lonnsoppgjor(ansattMenn, kroneTilleggForMenn);
 		
 		
