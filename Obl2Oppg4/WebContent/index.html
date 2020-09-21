@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Montserrat:400, 700);
+
+    html {
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+        background: #fff;
+    }
+
+    button,
+    input {
+        color: #5a5a5a;
+    }
+
+    input {
+        line-height: normal;
+    }
+
+    .container {
+        border: solid 3px #474544;
+        max-width: 500px;
+        margin: 60px auto;
+        position: relative;
+    }
+
+    form {
+        padding: 37.5px;
+        margin: 50px 0;
+    }
+
+    h3 {
+        color: #474544;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 7px;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 50px;
+    }
+
+    input[type='text'] {
+        background: none;
+        border: none;
+        border-bottom: solid 2px #474544;
+        color: #474544;
+        font-size: 1em;
+        font-weight: 400;
+        letter-spacing: 1px;
+        margin: 0 0 1.875em 0;
+        padding: 0 0 0.875em 0;
+        text-transform: uppercase;
+        width: 100%;
+    }
+
+    input[type='text']:focus {
+        outline: none;
+        padding: 0 0 0.875em 0;
+    }
+
+    ::-webkit-input-placeholder {
+        color: #474544;
+    }
+
+    .submit {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .submit input {
+        background: none;
+        border: solid 2px #474544;
+        color: #474544;
+        cursor: pointer;
+        font-size: 0.875em;
+        font-weight: bold;
+        outline: none;
+        padding: 20px 35px;
+        text-transform: uppercase;
+        transition: all 0.3s;
+    }
+
+    .submit input:hover {
+        background: #474544;
+        color: #f2f3eb;
+    }
+</style>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Registrering</title>
+    </head>
+    <body>
+        <div class="container">
+            <h3>Persondata</h3>
+            <form action="Registrer" method="post">
+                <input
+                    type="text"
+                    placeholder="Fornavn"
+                    name="fornavn"
+                    required
+                />
+                <input
+                    type="text"
+                    placeholder="etternavn"
+                    name="etternavn"
+                    required
+                />
+                <div class="submit">
+                    <input type="submit" value="Registrer" />
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
