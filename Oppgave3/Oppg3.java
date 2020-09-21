@@ -40,7 +40,7 @@ public class Oppg3 {
 		
 		// 3e
 		boolean hoyLonn = ansatte.stream().filter(a -> a.getLonn() > 800000).count() > 0 ? true : false;
-		System.out.println("\n3 e)\nNoen tjener over 800.000: " + hoyLonn);
+		System.out.println("\n3 e)\nNoen tjener over 800.000: " + (hoyLonn == true ? "Ja" : "Nei"));
 		
 		// 3f
 		System.out.println("\n3 f)");
